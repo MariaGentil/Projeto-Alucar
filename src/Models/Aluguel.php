@@ -25,8 +25,8 @@ class Aluguel{
             FROM alugueis a
             JOIN clientes c ON a.cliente_id = c.id
             JOIN carros ca ON a.carro_id = ca.id
-            ORDER BY a.id DESC
-        ");
+            ORDER BY a.id DESC");
+            
         return $sql->fetchAll(PDO::FETCH_ASSOC);
 }
     public function buscarPorId($id){

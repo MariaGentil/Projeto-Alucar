@@ -33,8 +33,7 @@
 <?php endforeach; ?>
 
 <?php else:?>
-        <div class='cd' >Nenhum aluguel cadastrado ainda.</td>
-        </tr>
+        <div class='cd' >Nenhum aluguel cadastrado ainda.
         </div>
 <?php endif; ?>
 

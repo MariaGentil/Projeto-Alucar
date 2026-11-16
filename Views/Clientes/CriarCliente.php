@@ -2,7 +2,7 @@
     <h2>Cadastrar Novo Cliente</h2>
 
 <?php if (!empty($erro)): ?>
-    <div class="msg-erro">
+    <div class="erro">
     <?= $erro ?>
     </div>
 <?php endif; ?>
@@ -91,7 +91,7 @@
 .voltar:hover{
     color: #0f172a;
 }
-.msg-erro {
+.erro {
     background-color: #fee2e2; 
     color: #dc2626; 
     padding: 12px;

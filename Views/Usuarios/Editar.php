@@ -3,7 +3,9 @@
         <h2>Editar Usuário</h2>
     </div>
     <?php if (!empty($erro)): ?>
-        <div class="erro-msg"><?= $erro ?></div>
+        <div class="erro"><?= 
+            $erro ?>
+        </div>
     <?php endif; ?>
     <form method="POST" class="alucar-form">
         <div class="form-group">
@@ -94,5 +96,9 @@
 }
 .cancelar:hover{
     background-color: #cbd5e1;
+}
+.erro{
+    color: red;
+    font-weight: bold;
 }
 </style>

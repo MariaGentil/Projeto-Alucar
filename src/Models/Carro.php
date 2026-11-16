@@ -42,9 +42,9 @@ class Carro{
             ':cor'    => $cor,
             ':placa'  => $placa]);
 }
-    public function verificarPlaca(string $placa): bool {
+    public function verificarPlaca(string $placa): bool{
         $sql = $this->pdo->prepare("SELECT id FROM carros WHERE placa = :placa");
         $sql->execute([':placa' => $placa]);
-        return $sql->rowCount() > 0; // Retorna true se a placa já existir
-    }
+        return $sql->rowCount() > 0;
+}
 }
